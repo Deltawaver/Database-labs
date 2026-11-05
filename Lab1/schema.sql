@@ -1,7 +1,8 @@
 CREATE TABLE hotels (
     hotel_id BIGSERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
-    city VARCHAR(100) NOT NULL
+    city VARCHAR(100) NOT NULL,
+    UNIQUE (name, city)
 );
 
 CREATE TABLE rooms (
